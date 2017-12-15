@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ICT13580085B2.ProductNewPage">
+    <ScrollView>
+
+        <StackLayout
+            Orientation="Vertical"
+            Padding="20">
+            <Label
+                x:Name="titleLabel"
+                Text="เพิ่มสินค้า"
+                HorizontalTextAlignment="Center"/>
+            <Label
+                Text="ชื่อสินค้า" />
+            <Entry
+                x:Name="productNameEntry" />
+            <Label
+                Text="รายละเอียด" />
+            <Entry
+                x:Name="productDetailEntry" />
+            <Label
+                Text="หมวดสินค้า" />
+            <Picker
+                x:Name="categoryPicker"
+                Title="เลือกหมวดสินค้า"/>
+
+            <Label
+                Text="ราคาสินค้า" />
+            <Entry 
+                x:Name="productPriceEntry"/>
+
+            <Label
+                Text="ราคารวม" />
+            <Entry 
+                x:Name="sellPriceEntry"/>
+            <Label
+                Text="สต๊อกสินค้า" />
+            <Entry 
+                x:Name="stockEntry"/>
+            <Button
+                x:Name="submitButton"
+                Text="ตกลง"
+                BackgroundColor="Silver"/>
+
+            <Button
+                x:Name="cancelButton"
+                Text="ยกเลิก"
+                BackgroundColor="Red"/>
+
+
+        </StackLayout>
+
+
+    </ScrollView>
+
+</ContentPage>
